@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: "\u65A7\u982D"
   m_EditorClassIdentifier: 
   speedFly: 500
-  attack: 10
+  attack: 15
   countStart: 1
-  countMax: 20
-  interval: 3.5
+  countMax: 3
+  interval: 0.5
   v2SpawnPoint:
   - {x: -0.5, y: 0, z: 0}
   - {x: 0, y: 0.5, z: 0}
   - {x: 0.5, y: 0, z: 0}
   goWeapon: {fileID: 3076627627048399359, guid: 7696caf7c142b7d4ebf0d44ae5d0a53c, type: 3}
+  v3Direction: {x: 0, y: 1, z: 0}
