@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc94e086044a4d841a07816e30038c33, type: 3}
   m_Name: "\u6BD2"
   m_EditorClassIdentifier: 
-  speedFly: 500
-  attack: 10
+  speedFly: 100
+  attack: 20
   countStart: 1
-  countMax: 20
-  interval: 3.5
-  v2SpawnPoint: []
-  goWeapon: {fileID: 0}
-  v3Direction: {x: 0, y: 0, z: 0}
+  countMax: 5
+  interval: 5
+  v2SpawnPoint:
+  - {x: 0, y: 0, z: 0}
+  goWeapon: {fileID: 955871966622795643, guid: 1ddcb9fb464c5754dab89e6ec185e6d2, type: 3}
+  v3Direction: {x: 10, y: 1, z: 0}
