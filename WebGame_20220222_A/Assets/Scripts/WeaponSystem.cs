@@ -80,6 +80,8 @@ namespace JASE
                 timer = 0;
                 // 刪除物件(遊戲物件，延遲時間)
                 Destroy(temp, weaponDestoryTime);
+                // 取得武器.攻擊力 = 武器資料.攻擊力
+                temp.GetComponent<Weapon>().attack = dataWeapon.attack;
             }
             // 否則
             else

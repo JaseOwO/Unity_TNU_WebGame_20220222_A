@@ -18,3 +18,4 @@ MonoBehaviour:
   hp: 100
   expDropPribability: 0.7
   typeExp: 0
+  stopDistance: 1
