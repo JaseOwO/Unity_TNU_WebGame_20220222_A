@@ -12,13 +12,17 @@ namespace JASE
         // protected 保護：僅限此類別與子類別可以存取
         [SerializeField, Header("血量"), Range(0, 10000)]
         protected float hp;
-        
+
+        // virtual 虛擬，允許子類別使用 overide 覆寫
+
         /// <summary>
         /// 受到傷害
         /// </summary>
         /// <param name="damage">傷害值</param>
-        public void GetHurt(float damage)
+        public virtual void GetHurt(float damage)
         {
+            if (hp <= 0) return;
+
             hp -= damage;
             print("<color=red>收到的傷害：" + damage + "</color>");
 
@@ -28,7 +32,7 @@ namespace JASE
         /// <summary>
         /// 死亡
         /// </summary>
-        private void Dead()
+        protected virtual void Dead()
         {
             hp = 0;
             print("<color=pink>角色死亡：" + gameObject + "</color>");
